@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.tabnav {
+  margin: auto;
+  display: flex;
+  list-style-type: none;
+}
+.tabnav li {
+  cursor: pointer;
+  width: 50%;
+  background: #ddd;
+  color: #333;
+  padding: 10px;
+  text-decoration: none;
+}
+.tabnav li.active {
+  background: #405dca;
+  color: #fff;
+}
+.tabcontent {
+  padding: 20px;
+  border: 1px dotted #ccc;
+}

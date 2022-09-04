@@ -1,11 +1,13 @@
-new Vue({
-  el: "#tab",
-  data: {
-      isActive: "1"
+const app = Vue.createApp({
+  data() {
+    return {
+      show: "1",
+    };
   },
   methods: {
-      isSelect: function (num) {
-          this.isActive = num;
-      }
-  }
+    select: function (num) {
+      this.show = num;
+    },
+  },
 });
+app.mount("#app");
